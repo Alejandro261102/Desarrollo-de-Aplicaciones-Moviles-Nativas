@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header" android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:text="🖲️ Botones"
+            android:textStyle="bold" android:textSize="20sp"/>
+
+        <TextView
+            android:text="Los botones permiten ejecutar acciones como enviar formularios o navegar."
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_click" android:text="Mostrar Toast"
+        android:layout_below="@id/header" android:layout_marginTop="16dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/img_btn"
+        android:src="@android:drawable/ic_menu_camera"
+        android:contentDescription="Cámara"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_toRightOf="@id/btn_click" android:layout_marginLeft="16dp"
+        android:layout_below="@id/header"
+        android:layout_width="48dp" android:layout_height="48dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_go_list"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        android:contentDescription="Ir a Lista"
+        android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</RelativeLayout>

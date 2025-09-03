@@ -1,0 +1,31 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:text="✅ Elementos de selección"
+            android:textStyle="bold" android:textSize="20sp"/>
+
+        <TextView
+            android:text="Permiten elegir opciones: múltiples (CheckBox), exclusivas (Radio) o activar/desactivar (Switch)."
+            android:layout_marginBottom="12dp"/>
+
+        <CheckBox android:id="@+id/cb1" android:text="Opción A"/>
+        <CheckBox android:id="@+id/cb2" android:text="Opción B"/>
+
+        <RadioGroup android:id="@+id/rg"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_si" android:text="Sí"/>
+            <RadioButton android:id="@+id/rb_no" android:text="No"/>
+        </RadioGroup>
+
+        <Switch android:id="@+id/sw" android:text="Activar notificaciones" android:layout_marginTop="8dp"/>
+
+        <TextView android:id="@+id/tv_estado"
+            android:text="Estado: " android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</ScrollView>

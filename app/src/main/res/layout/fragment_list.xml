@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="📋 Lista (ListView)"
+        android:textStyle="bold" android:textSize="20sp"/>
+
+    <TextView
+        android:text="Muestran colecciones de ítems desplazables. Toca un elemento para mostrar un detalle."
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
