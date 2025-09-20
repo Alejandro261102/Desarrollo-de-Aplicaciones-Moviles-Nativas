@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="✏️ TextFields (EditText)"
+        android:textStyle="bold" android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:text="Permiten capturar texto del usuario, como nombre, correo o comentarios."
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editText" android:hint="Escribe tu nombre"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnShow" android:text="Mostrar saludo"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textResult" android:text="Aquí verás el resultado"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>
