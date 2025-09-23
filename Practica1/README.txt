@@ -132,6 +132,19 @@ Hallazgos
 - Si no compilas para Windows, no necesitas Visual Studio, solo SDK Android.
 - Depuración: usar emulador de Android Studio y flutter doctor para diagnosticar.
 
+-----------
+Evidencias
+-----------
+![Screenshot 1](../Imagenes/Screenshot_20250907_135758.png)
+![Screenshot 2](../Imagenes/Screenshot_20250907_135848.png)
+![Screenshot 3](../Imagenes/Screenshot_20250907_135913.png)
+![Screenshot 4](../Imagenes/Screenshot_20250907_135941.png)
+![Screenshot 5](../Imagenes/Screenshot_20250907_135952.png)
+![Screenshot 6](../Imagenes/Screenshot_20250922_213251.png)
+![Screenshot 7](../Imagenes/Screenshot_20250922_213407.png)
+![Screenshot 8](../Imagenes/Screenshot_20250922_213424.png)
+![Screenshot 9](../Imagenes/Screenshot_20250922_213432.png)
+![Screenshot 10](../Imagenes/Screenshot_20250922_213446.png)
 
 ------------------------------------------------------
 Autor
