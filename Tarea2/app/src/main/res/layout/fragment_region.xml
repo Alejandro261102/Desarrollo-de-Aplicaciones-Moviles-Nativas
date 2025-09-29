@@ -1,25 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_region">
 
-    <TextView
-        android:id="@+id/tv_region_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="🏞 Región Misteriosa"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"/>
-
     <Button
         android:id="@+id/btn_enter_scene"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Explorar Escena"
+        android:text="Explorar Escena/País (PdI Principal)"
         android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_info_poi_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Información Secreta (PdI Secundario)"
+        android:layout_below="@id/btn_enter_scene"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
 
 </RelativeLayout>

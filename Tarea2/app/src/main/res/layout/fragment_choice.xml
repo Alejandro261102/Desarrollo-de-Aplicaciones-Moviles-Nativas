@@ -4,13 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
-
-    <Button
-        android:id="@+id/btn_option1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Opción 1" />
+    android:padding="16dp"
+    android:background="#DFDFDF"> <Button
+    android:id="@+id/btn_option1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Opción 1" />
 
     <Button
         android:id="@+id/btn_option2"
