@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button // Importación necesaria
+import android.widget.Button
+import androidx.appcompat.widget.SwitchCompat
 import androidx.fragment.app.Fragment
-import com.example.juegonarrativoaventura.R // Importación necesaria
+import com.example.juegonarrativoaventura.R
+import com.example.juegonarrativoaventura.utils.ThemeManager
 
 class WorldMapFragment : Fragment() {
     override fun onCreateView(
@@ -14,14 +16,28 @@ class WorldMapFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflar el layout que realmente existe
         val view = inflater.inflate(R.layout.fragment_world, container, false)
 
-        // PdI Nivel 1: Transición a Activity Nivel 2
-        // El ID debe ser el que está en fragment_world.xml
-        view.findViewById<Button>(R.id.btn_enter_region).setOnClickListener {
-            // Llama al metodo de WorldActivity para aplicar la transición creativa.
-            (activity as? WorldActivity)?.navigateToRegion()
+        // --- Lógica del Switch de Tema ---
+        val themeSwitch = view.findViewById<SwitchCompat>(R.id.switch_theme)
+
+        // Establecer el estado inicial del switch
+        themeSwitch.isChecked = ThemeManager.isDarkMode(requireContext())
+
+        themeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            // Guardar la preferencia
+            ThemeManager.saveThemePreference(requireContext(), isChecked)
+            // Reiniciar la actividad para aplicar el tema
+            activity?.recreate()
+        }
+
+        // --- Lógica de Navegación ---
+        view.findViewById<Button>(R.id.btn_to_forest).setOnClickListener {
+            (activity as? WorldActivity)?.navigateToForest()
+        }
+
+        view.findViewById<Button>(R.id.btn_to_mountains).setOnClickListener {
+            (activity as? WorldActivity)?.navigateToMountains()
         }
 
         return view

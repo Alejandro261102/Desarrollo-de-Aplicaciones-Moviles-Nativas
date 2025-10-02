@@ -1,4 +1,36 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.JuegoNarrativoAventura" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.JuegoNarrativoAventura" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.JuegoNarrativoAventura" parent="Base.Theme.JuegoNarrativoAventura" />
+
+    <style name="Theme.App.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/light_background</item>
+        <item name="android:textColor">@color/light_text</item>
+        <item name="buttonStyle">@style/AppButton.Light</item>
+        <item name="android:textViewStyle">@style/AppTextView.Light</item>
+    </style>
+
+    <style name="Theme.App.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="buttonStyle">@style/AppButton.Dark</item>
+        <item name="android:textViewStyle">@style/AppTextView.Dark</item>
+    </style>
+
+    <style name="AppButton.Light" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/light_button_background</item>
+        <item name="android:textColor">@color/light_button_text</item>
+    </style>
+    <style name="AppTextView.Light" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/light_text</item>
+    </style>
+
+    <style name="AppButton.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/dark_button_background</item>
+        <item name="android:textColor">@color/dark_button_text</item>
+    </style>
+    <style name="AppTextView.Dark" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/dark_text</item>
     </style>
 </resources>
