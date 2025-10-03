@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.juegonarrativoaventura.R
 import com.example.juegonarrativoaventura.fragments.RegionFragment // Importación necesaria
 import com.example.juegonarrativoaventura.ui.scene.SceneActivity
+import com.example.juegonarrativoaventura.utils.ThemeManager
 
 class RegionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemeManager.applyTheme(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_region)
 

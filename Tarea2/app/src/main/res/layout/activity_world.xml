@@ -2,4 +2,4 @@
     android:id="@+id/fragment_container_world"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/world_background" />
+    android:background="@drawable/world_background" android:padding="24dp"/>

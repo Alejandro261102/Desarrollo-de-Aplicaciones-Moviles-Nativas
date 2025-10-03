@@ -10,7 +10,6 @@ import com.example.juegonarrativoaventura.utils.ThemeManager
 
 class WorldActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        // 1. Aplicar el tema ANTES de todo lo demás
         ThemeManager.applyTheme(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_world)

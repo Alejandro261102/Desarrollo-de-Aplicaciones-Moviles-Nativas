@@ -3,9 +3,11 @@ package com.example.juegonarrativoaventura.ui.scene
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.juegonarrativoaventura.R
+import com.example.juegonarrativoaventura.utils.ThemeManager
 
 class SceneActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemeManager.applyTheme(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scene)
 
