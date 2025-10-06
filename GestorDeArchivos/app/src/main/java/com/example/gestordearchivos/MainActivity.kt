@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             }
             recyclerView.adapter = fileAdapter
         } catch (e: SecurityException) {
-            Toast.makeText(this, "No se puede acceder a esta carpeta.", Toast.SHORT).show()
+            Toast.makeText(this, "No se puede acceder a esta carpeta.", Toast.LENGTH_SHORT).show()
             // Vuelve al directorio padre si hay un error de acceso
             currentDirectory.parentFile?.let { displayFiles(it) }
         }
