@@ -1,0 +1,65 @@
+<!--
+    Archivo: activity_main.xml
+    Descripción: Diseño principal de la aplicación que permite controlar una linterna,
+    activar vibraciones cortas y enviar notificaciones programadas.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Sección: Linterna -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linterna"
+        android:textSize="20sp" />
+
+    <!-- Botón que enciende o apaga la linterna -->
+    <Button
+        android:id="@+id/button_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encender" />
+
+    <!-- Sección: Vibración -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Vibración"
+        android:textSize="20sp" />
+
+    <!-- Botón que activa una vibración corta -->
+    <Button
+        android:id="@+id/button_vibrate_short"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibrar Corto" />
+
+    <!-- Sección: Notificación -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Notificación"
+        android:textSize="20sp" />
+
+    <!-- Campo de texto donde el usuario escribe el mensaje para la notificación -->
+    <EditText
+        android:id="@+id/edittext_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tu recordatorio" />
+
+    <!-- Botón que programa la notificación para mostrarse después de 5 segundos -->
+    <Button
+        android:id="@+id/button_send_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificar en 5 seg" />
+
+</LinearLayout>
